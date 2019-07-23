@@ -23,7 +23,7 @@ def test_matrix_multiply():
     assert result[2][1] == approx(-1.1, rel=1e-5)
 
 
-def test_matrix_multiply_benchmark():
+def test_matrix_multiply_1000x1000_benchmark():
     rows1 = 1000
     columns1 = 1000
     columns2 = 1000
@@ -37,5 +37,23 @@ def test_matrix_multiply_benchmark():
 
     end = timer()
 
-    print(f"\nMultiply with three loops: {end - start} s\n")
+    print(f"\nMultiply 1000x1000 matrices with three loops: {end - start} s\n")
+    assert result[0][0] != 42
+
+
+def test_matrix_multiply_500x500_benchmark():
+    rows1 = 200
+    columns1 = 200
+    columns2 = 200
+
+    matrix1 = [[random.uniform(-1, 1) for _ in range(columns1)] for _ in range(rows1)]
+    matrix2 = [[random.uniform(-1, 1) for _ in range(columns2)] for _ in range(columns1)]
+
+    start = timer()
+
+    result = multiply(matrix1, matrix2)
+
+    end = timer()
+
+    print(f"\nMultiply {rows1}x{columns1} matrices with three loops: {end - start} s\n")
     assert result[0][0] != 42
