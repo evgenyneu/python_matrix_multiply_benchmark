@@ -32,7 +32,7 @@ pytest
 252    ± 5 s   : Python, three loops
 ```
 
-The benchmark was run on MacBook Pro (Retina, 13-inch, Late 2012) computer with 2.5 GHz Intel Core i5 processor and 8 GB of RAM.
+The benchmark was run on MacBook Pro (Retina, 13-inch, Late 2012) computer with a dual core 2.5 GHz Intel Core i5 processor and 8 GB of RAM.
 
 Benchark data [multiply_1000_by_1000_matrices.xlsx](https://github.com/evgenyneu/image_compressor_c/blob/master/benchmark/multiply_1000_by_1000_matrices.xlsx)
 
