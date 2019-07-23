@@ -1,3 +1,6 @@
+import numpy as np
+
+
 def multiply(matrix1, matrix2):
     """
     Multiplies two matrices matrix1 * matrix2
@@ -34,3 +37,21 @@ def multiply(matrix1, matrix2):
             result[i][j] = sum_cell
 
     return result
+
+
+def multiply_numpy(matrix1, matrix2):
+    """
+    Multiplies two matrices matrix1 * matrix2 using numpy
+
+    Parameters
+    ----------
+    matrix1, matrix2: npd.array
+        The two matrices to matiply
+
+    Returns
+    -------
+    nd.array
+        Result of matrix multiplication: matrix1 * matrix2
+    """
+
+    return np.matmul(matrix1, matrix2)
