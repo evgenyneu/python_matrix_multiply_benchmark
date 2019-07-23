@@ -1,6 +1,6 @@
 # Matrix multiplication benchmark in Python
 
-This is a benchmark that measures time it takes to multiply two matrices in Python. Here we compare the brute force matrix multiplication that uses three nested loops with that done with NymPy's matmul function. NumPy internally uses C code, which in turn calls a dgemm function from a [BLAS library](https://en.wikipedia.org/wiki/Basic_Linear_Algebra_Subprograms). We also compare the results with a similar one written in C, that also has a naive nested loops and a BLAS implementation.
+This is a benchmark that measures time it takes to multiply two matrices in Python. Here we first use the brute force matrix multiplication method that uses three nested loops. Next we compare this method with NymPy's matmul function. NumPy internally uses C code, which in turn calls a dgemm function from a [BLAS library](https://en.wikipedia.org/wiki/Basic_Linear_Algebra_Subprograms). We also compare the results with a similar one written in C, that also has a naive nested loops and a BLAS implementation.
 
 ## Setup
 
