@@ -37,5 +37,5 @@ def test_matrix_multiply_benchmark():
 
     end = timer()
 
-    print(f"\nElapsed: {end - start}\n")
+    print(f"\nMultiply with three loops: {end - start} s\n")
     assert result[0][0] != 42
